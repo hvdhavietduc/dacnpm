@@ -21,77 +21,77 @@ const publicRoutes = [
     {
         path: '/Cart',
         component: Cart,
-        layout: null,
+        layout: 0
     },
     {
         path: '/CategoryProduct',
         component: CategoryProduct,
-        layout: null,
+        layout: 0
     },
     {
         path: '/ForgetPassword',
         component: ForgetPassword,
-        layout: null,
+        layout: 0
     },
     {
         path: '/',
         component: Homepage,
-        layout: null,
+        layout: 0
     },
     {
         path: '/',
         component: Homepage_Ad,
-        layout: null,
+        layout: 0
     },
     {
         path: '/',
         component: Homepage_Kh,
-        layout: null,
+        layout: 0
     },
     {
         path: '/InsertProduct',
         component: InsertProduct,
-        layout: null,
+        layout: 0
     },
     {
         path: '/ListProduct',
         component: ListProduct,
-        layout: null,
+        layout: 0
     },
     {
         path: '/Login',
         component: Login,
-        layout: null,
+        layout: 0
     },
     {
         path: '/ModifiedProduct',
         component: ModifiedProduct,
-        layout: null,
+        layout: 0
     },
     {
         path: '/PageOrder',
         component: PageOrder,
-        layout: null,
+        layout: 0
     },
     {
         path: '/PaymentAddress',
         component: PaymentAddress,
-        layout: null,
+        layout: 0
     },
     {
         path: '/ProfileIndividiual',
         component: ProfileIndividiual,
-        layout: null,
+        layout: 0
     },
     {
         path: '/ProfileProduct',
         component: ProfileProduct,
-        layout: null,
+        layout: 0
     },
     {
         path: '/Register',
         component: Register,
-        layout: null,
+        layout: 0
     }
 ];
 const privateRoutes = [];
