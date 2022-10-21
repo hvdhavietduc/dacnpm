@@ -1,6 +1,10 @@
 .wrapper{
     height: var(--height-header);
     background-color: var(--primary1-color);
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 1;
 }
 /* Navbar1 */
 .navbar1
@@ -67,14 +71,14 @@
 {
     text-decoration: none;
     color: var(--primary2-color);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
 }
 .navbar1__login
 {
     text-decoration: none;
     color: var(--primary2-color);
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
     margin-left: 40px;
 }
@@ -115,11 +119,12 @@
 }
 .navbar2__category-icon_first
 {
-    font-size: 23px;
+    font-size: 20px;
 }
 .navbar2__category-text
 {
     margin: 0 8px 0 8px;
+    font-weight: 500;
 }
 .navbar2__wrap
 {
@@ -135,7 +140,7 @@
 }
 .navbar2__searchProduct-icon
 {
-    font-size: 21px;
+    font-size: 19px;
     margin-right: 5px;
 }
 .navbar2__searchProduct-text
@@ -143,6 +148,7 @@
     text-decoration: none;
     color: var(--primary1-color);
     font-size: 16px;
+    font-weight: 500;
 }
 .navbar2__intro
 {
@@ -150,6 +156,7 @@
     color: var(--primary1-color);
     font-size: 16px;
     margin: 0 20px 0 20px;
+    font-weight: 500;
 }
 .navbar2__contact
 {
@@ -159,7 +166,7 @@
 }
 .navbar2__contact-icon
 {
-    font-size: 20px;
+    font-size: 18px;
     margin-right: 5px;
 }
 .navbar2__contact-text
@@ -167,4 +174,5 @@
     text-decoration: none;
     color: var(--primary1-color);
     font-size: 16px;
+    font-weight: 500;
 }
