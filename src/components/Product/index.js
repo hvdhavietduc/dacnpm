@@ -13,30 +13,75 @@ price_new(float), price_old(float) */
 function Product(props)
 {
     return (
-        <a href="" className={cx('wrapper')}>
+        <div className={cx('wrapper')}>
             <div className={cx('product__top')} >
-                <img className={cx('product__top-img')} src={props.URL_img} align='middle'/>
+                <a href="" className={cx('product__top-link')}>
+                    <img className={cx('product__top-img')} src={props.URL_img} align='middle'/>
+                </a>
+                
                 <div className={cx('product__top-sale')}>
+                    <span className={cx('new')}>NEW</span>
+                    <span className={cx('sale')}>- {props.sale} %</span>
                 </div>
                 <div className={cx('product__top-move')}>
+                    <div className={cx('move-left')}>
+                        <i className={cx('move-left_icon',"fa-solid fa-angle-left")}></i>
+                    </div>
+                    <div className={cx('move-right')}>
+                        <i className={cx('move-right_icon',"fa-solid fa-angle-right")}></i>
+                    </div>
                 </div>
                 <div className={cx('product__top-size')}>
+                    <a href="" className={cx('size-item','active')}>
+                        <span style={{top: '10px', position: 'relative'}}>36</span>
+                    </a>
+                    <a href="" className={cx('size-item')}>
+                        <span style={{top: '10px', position: 'relative'}}>37</span>
+                    </a>
+                    <a href="" className={cx('size-item')}>
+                        <span style={{top: '10px', position: 'relative'}}>38</span>
+                    </a>
+                    <a href="" className={cx('size-item')}>
+                        <span style={{top: '10px', position: 'relative'}}>39</span>
+                    </a>
+                    <a href="" className={cx('size-item')}>
+                        <span style={{top: '10px', position: 'relative'}}>40</span>
+                    </a>
+                    <a href="" className={cx('size-item')}>
+                        <span style={{top: '10px', position: 'relative'}}>41</span>
+                    </a>
+                    <a href="" className={cx('size-item')}>
+                        <span style={{top: '10px', position: 'relative'}}>42</span>
+                    </a>
+                    <a href="" className={cx('size-item')}>
+                        <span style={{top: '10px', position: 'relative'}}>43</span>
+                    </a>
 
+                    
                 </div>
             </div>
             <div className={cx('product__bot')}>
                 <div className={cx('product__bot-name')}>
-
+                    {props.name}
                 </div>
                 <div className={cx('product__bot-price')}>
-
+                    <button className={cx('price-new')}>{props.price_new}</button>
+                    <button className={cx('price-old')}>{props.price_old}</button>
                 </div>
                 <div className={cx('product__bot-detail')}>
-
+                    <a href="" className={cx('cart')}>
+                        <i className={cx('cart-icon',"fa-solid fa-cart-shopping")}></i>
+                        <span className={cx('cart-text')}>Thêm giỏ hàng</span>
+                    </a>
+                    <span className={cx('arow')}></span>
+                    <a href="" className={cx('detail')}>
+                        <i className={cx('detail-icon',"fa-solid fa-eye")}></i>
+                        <span className={cx('detail-text')}>Xem chi tiết</span>
+                    </a>
                 </div>
 
             </div>
-        </a>
+        </div>
     )
 }
 export default Product;
