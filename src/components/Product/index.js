@@ -20,7 +20,7 @@ function Product(props)
                 </a>
                 
                 <div className={cx('product__top-sale')}>
-                    <span className={cx('new')}>NEW</span>
+                    {props.new && <span className={cx('new')}>NEW</span>}
                     <span className={cx('sale')}>- {props.sale} %</span>
                 </div>
                 <div className={cx('product__top-move')}>
@@ -31,7 +31,7 @@ function Product(props)
                         <i className={cx('move-right_icon',"fa-solid fa-angle-right")}></i>
                     </div>
                 </div>
-                <div className={cx('product__top-size')}>
+                {props.size && <div className={cx('product__top-size')}>
                     <a href="" className={cx('size-item','active')}>
                         <span style={{top: '10px', position: 'relative'}}>36</span>
                     </a>
@@ -58,7 +58,7 @@ function Product(props)
                     </a>
 
                     
-                </div>
+                </div>}
             </div>
             <div className={cx('product__bot')}>
                 <div className={cx('product__bot-name')}>
