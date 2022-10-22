@@ -3,7 +3,7 @@ import classNames from "classnames/bind";
 import styles from './Homepage.module.scss';
 import '../../components/base.module.scss';
 import Product from "../../components/Product";
-import { arr_commercial} from "../../components/arr";
+import { arr_commercial,beside_img} from "../../components/arr";
 
 const cx=classNames.bind(styles);
 
@@ -13,8 +13,7 @@ function Homepage ()
     const len_arr=arr_commercial.length;
     const indexRef=useRef(0);
     const [index,setIndex]=useState(0);
-    
- 
+
     useEffect(()=>{
         setTimeout(()=>setIndex(index+1),3000);
         indexRef.current++;
@@ -34,10 +33,10 @@ function Homepage ()
                         <div className={cx('grid__column-35')}>
                             <div className={cx('main__beside')}>
                                 <div className={cx('main__beside-1')}>
-                                    
+                                    <img className={cx('beside-1-img')} src={arr_commercial[0].URL_img}></img>
                                 </div>
                                 <div className={cx('main__beside-2')}>
-                                    
+                                    <img className={cx('beside-2-img')} src={arr_commercial[1].URL_img}></img>
                                 </div>
                             </div>
                         </div>
