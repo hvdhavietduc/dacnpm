@@ -1,0 +1,43 @@
+.wrapper {
+    display: flex;
+    flex-direction: row;
+}
+.content1 {
+    width: 10%;
+    padding-left: 15px;
+}
+.content2 {
+    width: 70%;
+    font-weight: 500;
+    & .product_name {
+        font-size: 20px;
+    }
+    & .product_price span {
+        font-size: 12px;
+        padding: 4px;
+    }
+    & .product_newprice {
+        color: red;
+    }
+    & .product_oldprice {
+        color: #ACACAC;
+        text-decoration: line-through;
+    }
+    & .product_number {
+        font-size: 12px;
+        padding: 4px;
+    }
+}
+.content3 {
+    padding-right: 15px;
+    width: 20%;
+    color: red;
+    font-weight: 500;
+    & .product_current_price {
+        text-align: right;
+    }
+}
+.product_img {
+    width: 60px;
+    height: 60px;
+}
